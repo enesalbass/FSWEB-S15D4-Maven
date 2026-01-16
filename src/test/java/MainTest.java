@@ -1,5 +1,5 @@
 import org.example.Main;
-import org.example.WorkintechList;
+import org.example.Workintech;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -35,7 +35,7 @@ public class MainTest {
     @Test
     @DisplayName("WorkintechList doğru tipe sahip mi ?")
     public void testWorkintechListType(){
-        WorkintechList list = new WorkintechList();
+        Workintech list = new Workintech();
         assertEquals(list instanceof ArrayList, true);
         assertEquals(list instanceof List, true);
     }
@@ -43,7 +43,7 @@ public class MainTest {
     @Test
     @DisplayName("WorkintechList'e aynı eleman birden fazla kez eklenebiliyor mu ?")
     public void testWorkintechListAddMethod(){
-        WorkintechList list = new WorkintechList();
+        Workintech list = new Workintech();
         list.add("Mehmet");
         list.add("Mehmet");
         list.add("Ali");
@@ -56,7 +56,7 @@ public class MainTest {
     @Test
     @DisplayName("WorkintechList sort metodu doğru çalışıyor mu?")
     public void testWorkintechListSortMethod(){
-        WorkintechList list = new WorkintechList();
+        Workintech list = new Workintech();
         list.add("Mehmet");
         list.add("Mehmet");
         list.add("Ali");
@@ -71,7 +71,7 @@ public class MainTest {
     @Test
     @DisplayName("WorkintechList remove metodu doğru çalışıyor mu?")
     public void testWorkintechListRemoveMethod(){
-        WorkintechList list = new WorkintechList();
+        Workintech list = new Workintech();
         list.add("Mehmet");
         list.add("Mehmet");
         list.add("Ali");
